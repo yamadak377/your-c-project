@@ -3,14 +3,13 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                bat 'set PATH=C:\\Program Files\\Git\\bin;%PATH%'
                 git branch: 'main', url: 'https://github.com/yamadak377/your-c-project.git'
             }
         }
         stage('Build') {
             steps {
                 // MinGWのパスを通す（例: C:\mingw64\bin）
-                bat 'set PATH=C:\\mingw64\\bin;%PATH% && make clean && make'
+                bat 'set PATH=C:\\Users\\user\\mingw64\\bin;%PATH% && make clean && make'
             }
         }
         stage('Test') {
