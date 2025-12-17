@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/yourname/your-c-project.git'
+                bat 'set PATH=C:\\Program Files\\Git\\bin;%PATH%'
+                git branch: 'main', url: 'https://github.com/yamadak377/your-c-project.git'
             }
         }
         stage('Build') {
