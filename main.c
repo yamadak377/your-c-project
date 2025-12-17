@@ -2,5 +2,5 @@
 
 int main(void) {
     printf("Hello from C on Jenkins!!!\n");
-    return -1;
+    return 0;
 }
