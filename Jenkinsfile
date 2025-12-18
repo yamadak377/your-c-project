@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/yamadak377/your-c-project.git'
+                git branch: 'feature_test', url: 'https://github.com/yamadak377/your-c-project.git'
             }
         }
         stage('Build') {
